@@ -1,10 +1,7 @@
 return {
-  "folke/tokyonight.nvim",
-  lazy = false,
-  priority = 1000,
-  opts = {},
+  "EdenEast/nightfox.nvim",
 
-  config = function()
-    vim.cmd[[colorscheme tokyonight]]
+  config = function ()
+    vim.cmd("colorscheme duskfox")
   end,
 }
