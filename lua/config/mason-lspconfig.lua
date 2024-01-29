@@ -1,3 +1,3 @@
-require("mason-lspconfig").setup {
-  ensure_installed = { }
-}
+require("mason-lspconfig").setup({
+	ensure_installed = { "lua_ls", "gopls" },
+})
