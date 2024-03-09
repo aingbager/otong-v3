@@ -8,7 +8,7 @@
 
 return {
   { "catppuccin/nvim",
-    name = "catppuccin",
+    name = "mocha",
     priority  = 1000,
 
     config = function()
