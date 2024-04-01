@@ -1,4 +1,4 @@
---[[ return {
+return {
 	{
 		"lukas-reineke/indent-blankline.nvim",
 		main = "ibl",
@@ -7,9 +7,9 @@
 			require("config.indentline-config")
 		end,
 	},
-} ]]
+}
 
-return {
+--[[ return {
 	"lukas-reineke/indent-blankline.nvim",
 	main = "ibl",
 	opts = function(_, opts)
@@ -19,4 +19,4 @@ return {
 	dependencies = {
 		"TheGLander/indent-rainbowline.nvim",
 	},
-}
+} ]]

@@ -6,7 +6,7 @@
   end,
 } ]]
 
-return {
+--[[ return {
   { "catppuccin/nvim",
     name = "mocha",
     priority  = 1000,
@@ -15,4 +15,12 @@ return {
           vim.cmd("colorscheme catppuccin")
     end,
   }
+} ]]
+
+return {
+  "rebelot/kanagawa.nvim",
+
+  config = function()
+        vim.cmd("colorscheme kanagawa")
+  end,
 }
