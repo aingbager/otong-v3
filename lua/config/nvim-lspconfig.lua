@@ -26,8 +26,14 @@ require'lspconfig'.html.setup({
   capabilities = capabilities
 }) ]]
 
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+require'lspconfig'.html.setup {
+  capabilities = capabilities,
+}
+
 -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
-local servers = { 'clangd', 'rust_analyzer', 'cssls', 'html','pyright'}
+local servers = { 'clangd', 'rust_analyzer', 'cssls','pyright','tsserver'}
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     -- on_attach = my_custom_on_attach,

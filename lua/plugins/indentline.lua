@@ -1,4 +1,4 @@
-return {
+--[[ return {
 	{
 		"lukas-reineke/indent-blankline.nvim",
 		main = "ibl",
@@ -7,7 +7,7 @@ return {
 			require("config.indentline-config")
 		end,
 	},
-}
+} ]]
 
 --[[ return {
 	"lukas-reineke/indent-blankline.nvim",
@@ -20,3 +20,24 @@ return {
 		"TheGLander/indent-rainbowline.nvim",
 	},
 } ]]
+
+return {
+  {
+  "shellRaining/hlchunk.nvim",
+  event = { "UIEnter" },
+  config = function()
+    require('hlchunk').setup({
+    indent = {
+        chars = { "│", "¦", "┆", "┊", }, -- more code can be found in https://unicodeplus.com/
+
+        style = {
+            "#f70c14",
+        },
+    },
+    blank = {
+        enable = false,
+    }
+})
+  end
+},
+}
