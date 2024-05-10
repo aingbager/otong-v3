@@ -21,23 +21,11 @@
 	},
 } ]]
 
+
 return {
-  {
   "shellRaining/hlchunk.nvim",
   event = { "UIEnter" },
   config = function()
-    require('hlchunk').setup({
-    indent = {
-        chars = { "│", "¦", "┆", "┊", }, -- more code can be found in https://unicodeplus.com/
-
-        style = {
-            "#f70c14",
-        },
-    },
-    blank = {
-        enable = false,
-    }
-})
-  end
-},
+    require("config.indentline-config")
+  end,
 }
