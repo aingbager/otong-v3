@@ -1,4 +1,4 @@
---[[ return {
+return {
 	{
 		"lukas-reineke/indent-blankline.nvim",
 		main = "ibl",
@@ -7,7 +7,7 @@
 			require("config.indentline-config")
 		end,
 	},
-} ]]
+}
 
 --[[ return {
 	"lukas-reineke/indent-blankline.nvim",
@@ -22,10 +22,11 @@
 } ]]
 
 
-return {
+--[[ return {
   "shellRaining/hlchunk.nvim",
   event = { "UIEnter" },
   config = function()
     require("config.indentline-config")
   end,
-}
+} ]]
+
